@@ -506,7 +506,7 @@
 - taxonomy: AI・编程
   icon: bi bi-code-slash
   list:
-  - term: 编程助手
+  - term: IDE
     links:
     - title: Cursor
       logo: cursor.png
@@ -582,13 +582,38 @@
       favicon:
       url: https://zcode-ai.com/
       description: 智谱华章旗下 AI 编程助手
+  - term: CLI
+    links:
+    - title: Kilo Code
+      logo: kilo.png
+      url: https://kilo.ai/
+      description: 面向开发者的开源编程智能体 (Coding Agent)
+    - title: OpenCode
+      logo: opencode.png
+      url: https://opencode.ai/
+      description: 开源 AI 编程智能体，支持终端、IDE 或桌面端
+    - title: Gemini CLI
+      logo: gemini.png
+      url: https://geminicli.com/
+      description: 利用 AI 进行构建、调试和部署的终端工具
+    - title: OpenAI Codex
+      logo: chatgpt.png
+      url: https://openai.com/codex/
+      description: OpenAI 旗下的自主软件工程智能体 (AI Software Engineering Agent)
+    - title: Claude Code
+      logo: claude.png
+      url: https://code.claude.com/docs/en/overview
+      description: Anthropic 旗下的智能体编程工具，支持终端 CLI 和 IDE
+    - title: Qwen
+      logo: qwen.png
+      url: https://qwen.ai/qwencode
+      description: 阿里巴巴通义千问旗下的领先开源代码大模型
+    - title: Cline CLI
+      logo: cline.png
+      url: https://cline.bot/cline-cli
+      description: 在终端中使用 Cline 智能体，支持自动化 CI/CD 流程及多编辑器集成
   - term: VSCode 扩展
     links:
-    - title: CodeGeex
-      logo: codegeex.png
-      favicon:
-      url: https://codegeex.cn/
-      description: 基于AI大模型的编程辅助工具
     - title: Copilot
       logo: copilot.png
       favicon: https://github.com/favicons/favicon-copilot.png
@@ -599,6 +624,21 @@
       favicon:
       url: https://www.augmentcode.com/
       description: Augment Code AI 编程助手
+  - term: Skills
+    links:
+    - title: SkillHub
+      logo: cloud_tencent.png
+      url: https://skillhub.tencent.com/
+      description: 专为中国用户优化的 AI Skills 社区（腾讯提供）
+    - title: OpenClaw Skills
+      logo: github.png
+      url: https://github.com/openclaw/skills
+      description: ClawHub 上所有 AI 技能 (Skills) 的历史存档
+    - title: SkillsMarketplace
+      logo: skillsmp.png
+      favicon:
+      url: https://skillsmp.com/
+      description: AI 技能平台  
   - term: MCP
     links:
     - title: MCP.so
@@ -730,6 +770,10 @@
       logo: xiaomimimo.png
       url: https://aistudio.xiaomimimo.com/
       description: 小米旗下
+    - title: 阶跃AI
+      logo: stepfun.png
+      url: https://www.stepfun.com/chats/new
+      description: 阶跃星辰旗下      
   - term: Chat(海外)
     links:
     - title: ChatGPT
@@ -759,11 +803,6 @@
       favicon:
       url: https://www.scnet.cn/ui/chatbot/
       description: 超算互联网旗下
-    - title: 心流AI助手
-      logo: iflow.png
-      favicon:
-      url: https://iflow.cn/
-      description: 阿里巴巴旗下
   - term: 在线创作
     links:
     - title: 哩布哩布AI
@@ -894,6 +933,18 @@
       favicon:
       url: https://ollama.com/
       description: 启动并运行大型语言模型
+    - title: vLLM
+      logo: vllm.png
+      url: https://vllm.ai/
+      description: 高吞吐量且内存高效的 LLM 推理与服务引擎
+    - title: LM Studio
+      logo: lmstudio.png
+      url: https://lmstudio.ai/
+      description: 在本地硬件上运行开源 LLM 的桌面应用程序
+    - title: llama.cpp
+      logo: llama_cpp.png
+      url: https://github.com/ggml-org/llama.cpp
+      description: 纯 C/C++ 编写的高性能 LLM 推理引擎，支持多种硬件架构
 
 - taxonomy: 技术・提升
   # icon: fa-lg fas fa-graduation-cap

@@ -37,7 +37,7 @@ import os
 
 # Configuration
 API_BASE_URL = "https://link.asfd.cn/api/bookmarks/"
-API_TOKEN = os.getenv("TOKEN")  # Retrieve API token from environment variable
+API_TOKEN = os.getenv("API_TOKEN")  # Retrieve API token from environment variable
 if not API_TOKEN:
     print("Error: API_TOKEN environment variable not set")
     sys.exit(1)
@@ -64,7 +64,7 @@ def create_bookmark(title, url, description, tags):
         "tag_names": tags,
         "is_archived": False,
         "unread": False,
-        "shared": False
+        "shared": True
     }
     try:
         response = requests.post(API_BASE_URL, json=payload, headers=HEADERS)
