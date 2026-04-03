@@ -8,12 +8,12 @@
 - Python 3.6 或以上版本
 - requests 库 (`pip install requests`)
 - pyyaml 库 (`pip install pyyaml`)
-- 有效的 linkding API 令牌，需通过 API_TOKEN 环境变量设置
+- 有效的 linkding API 令牌，需通过 LINKDING_API_TOKEN 环境变量设置
 
 使用方法：
-    设置 API_TOKEN 环境变量并运行脚本，传入 YAML 文件路径：
+    设置 LINKDING_API_TOKEN 环境变量并运行脚本，传入 YAML 文件路径：
     ```bash
-    API_TOKEN=your_token python update_bookmarks.py path/to/bookmarks.yaml
+    LINKDING_API_TOKEN=your_token python update_bookmarks.py path/to/bookmarks.yaml
     ```
 
 YAML 文件结构示例：
@@ -37,11 +37,14 @@ import os
 
 # Configuration
 API_BASE_URL = "https://link.asfd.cn/api/bookmarks/"
-API_TOKEN = os.getenv("API_TOKEN")  # Retrieve API token from environment variable
-if not API_TOKEN:
-    print("Error: API_TOKEN environment variable not set")
+LINKDING_API_TOKEN = os.getenv("LINKDING_API_TOKEN")  # Retrieve API token from environment variable
+
+if os.getenv("KEY"):
+    LINKDING_API_TOKEN = os.getenv("KEY")
+if not LINKDING_API_TOKEN:
+    print("Error: LINKDING_API_TOKEN environment variable not set")
     sys.exit(1)
-HEADERS = {"Authorization": f"Token {API_TOKEN}"}
+HEADERS = {"Authorization": f"Token {LINKDING_API_TOKEN}"}
 
 def check_bookmark_exists(url):
     """Check if a bookmark with the given URL already exists."""

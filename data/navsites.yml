@@ -638,6 +638,11 @@
       logo: skillsmp.png
       favicon:
       url: https://skillsmp.com/
+      description: AI 技能平台
+    - title: Skills.sh
+      logo: skills_sh.png
+      favicon:
+      url: https://skills.sh/
       description: AI 技能平台  
   - term: MCP
     links:
