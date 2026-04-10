@@ -643,7 +643,12 @@
       logo: skills_sh.png
       favicon:
       url: https://skills.sh/
-      description: AI 技能平台  
+      description: AI 技能平台
+    - title: Hermes Agent Skills
+      logo: hermes.png
+      favicon:
+      url: https://hermes-agent.nousresearch.com/docs/skills
+      description: Nous Research 的 Hermes Agent 技能文档  
   - term: MCP
     links:
     - title: MCP.so
