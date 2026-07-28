@@ -16,7 +16,7 @@ before_script: |
 deploy:
   stage: deploy
   script: |
-    bash ./.deploy.sh -d
+    bash ./deploy.sh -d
 
   only:
   - main
