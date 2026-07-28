@@ -6,6 +6,8 @@ variables:
 image:
   name: ghcr.io/gohugoio/hugo:v0.164.0
   entrypoint: [""]
+  docker:
+    user: root
 
 stages:
 - deploy
