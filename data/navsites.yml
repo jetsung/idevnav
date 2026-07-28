@@ -29,10 +29,10 @@
       favicon:
       url: https://git.jetsung.com/jetsung
       description: 项目源码托管平台
-    - title: GitCode
-      logo: gitcode.png
+    - title: AtomGit
+      logo: atomgit.png
       favicon:
-      url: https://gitcode.com/jetsung
+      url: https://atomgit.com/jetsung
       description: （国内）作品项目代码开源
     - title: GitHub
       logo: github.png
@@ -103,10 +103,10 @@
       favicon:
       url: https://github.com
       description: 全球最大的代码托管平台
-    - title: ◈GitCode
-      logo: gitcode.png
+    - title: ◈AtomGit
+      logo: atomgit.png
       favicon:
-      url: https://gitcode.com
+      url: https://atomgit.com
       description: （国内）代码托管平台
     - title: ◈Framagit
       logo: framagit.svg
@@ -580,7 +580,7 @@
     - title: Z Code
       logo: zcode-ai.png
       favicon:
-      url: https://zcode-ai.com/
+      url: https://zcode.z.ai/
       description: 智谱华章旗下 AI 编程助手
   - term: CLI
     links:
@@ -628,12 +628,8 @@
     links:
     - title: SkillHub
       logo: cloud_tencent.png
-      url: https://skillhub.tencent.com/
+      url: https://skillhub.cn/
       description: 专为中国用户优化的 AI Skills 社区（腾讯提供）
-    - title: OpenClaw Skills
-      logo: github.png
-      url: https://github.com/openclaw/skills
-      description: ClawHub 上所有 AI 技能 (Skills) 的历史存档
     - title: SkillsMarketplace
       logo: skillsmp.png
       favicon:
@@ -681,11 +677,6 @@
       favicon:
       url: https://mcpservers.org/
       description: (wong2/awesome-mcp-servers)
-    - title: Model Context Protocol servers
-      logo: github.png
-      favicon:
-      url: https://github.com/modelcontextprotocol/servers
-      description: (modelcontextprotocol/servers)
     - title: Cursor Directory MCP
       logo: cursor_directory.png
       favicon:
