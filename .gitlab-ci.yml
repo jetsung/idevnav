@@ -3,7 +3,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
   CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
 
-image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+image: ghcr.io/gohugoio/hugo:v0.164.0
 
 stages:
 - deploy
@@ -11,10 +11,6 @@ stages:
 before_script: |
   apk update
   apk add --no-cache bash npm curl
-  # 升级 Node.js 至 v24（Wrangler 要求 >= v22）
-  npm install -g n
-  n 24
-  hash -r
   node --version
   npm install -g wrangler@latest
 
