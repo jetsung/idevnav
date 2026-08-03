@@ -644,7 +644,11 @@
       logo: hermes.png
       favicon:
       url: https://hermes-agent.nousresearch.com/docs/skills
-      description: Nous Research 的 Hermes Agent 技能文档  
+      description: Nous Research 的 Hermes Agent 技能文档
+    - title: AtomCode Skills
+      logo: atomgit.png
+      url: https://atomcode-plugin.atomgit.com/
+      description: AtomCode Skills 平台
   - term: MCP
     links:
     - title: MCP.so
