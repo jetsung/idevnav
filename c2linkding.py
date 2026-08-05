@@ -1,19 +1,27 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.9"
+# dependencies = [
+#     "pyyaml>=6.0",
+#     "requests>=2.31",
+# ]
+# ///
 """
-将书签数据从 YAML 文件更新到 linkding 实例（https://linkding.link）的脚本，使用其 REST API。
+将书签数据从 YAML 文件全量导入到 linkding 实例（https://linkding.link）的脚本，使用其 REST API。
 
-此脚本读取包含书签数据的 YAML 文件，检查每个书签的 URL 是否已存在于 linkding 服务器上，
-并为不存在的 URL 创建新书签。书签会使用 YAML 文件中的分类（taxonomy）和子分类（term）作为标签。
+此脚本为「全量导入」工具：读取传入的 YAML 文件，检查每个书签的 URL 是否已存在于 linkding
+服务器上，并为不存在的 URL 创建新书签。书签会使用 YAML 文件中的子分类（term）作为标签。
 
-依赖项：
-- Python 3.6 或以上版本
-- requests 库 (`pip install requests`)
-- pyyaml 库 (`pip install pyyaml`)
+依赖项（通过 PEP 723 内联声明，使用 `uv run` 自动安装）：
+- Python 3.9 或以上版本
+- requests >= 2.31
+- pyyaml >= 6.0
 - 有效的 linkding API 令牌，需通过 LINKDING_API_TOKEN 环境变量设置
 
 使用方法：
     设置 LINKDING_API_TOKEN 环境变量并运行脚本，传入 YAML 文件路径：
     ```bash
-    LINKDING_API_TOKEN=your_token python update_bookmarks.py path/to/bookmarks.yaml
+    LINKDING_API_TOKEN=your_token uv run c2linkding.py path/to/bookmarks.yaml
     ```
 
 YAML 文件结构示例：
@@ -28,6 +36,9 @@ YAML 文件结构示例：
 ```
 
 脚本会跳过缺少 URL 的书签以及已存在的书签，以避免重复。
+
+> 提示：若需要「增量同步 + 标签继承」（从同 term 下已有条目继承 tag_names、排除指定栏目），
+> 请改用 `.agents/skills/linkding-sync-prepper/sync.py`。
 """
 
 import yaml
@@ -37,6 +48,7 @@ import os
 
 # Configuration
 API_BASE_URL = "https://link.asfd.cn/api/bookmarks/"
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 LINKDING_API_TOKEN = os.getenv("LINKDING_API_TOKEN")  # Retrieve API token from environment variable
 
 if os.getenv("KEY"):
@@ -44,7 +56,7 @@ if os.getenv("KEY"):
 if not LINKDING_API_TOKEN:
     print("Error: LINKDING_API_TOKEN environment variable not set")
     sys.exit(1)
-HEADERS = {"Authorization": f"Token {LINKDING_API_TOKEN}"}
+HEADERS = {"Authorization": f"Token {LINKDING_API_TOKEN}", "User-Agent": USER_AGENT}
 
 def check_bookmark_exists(url):
     """Check if a bookmark with the given URL already exists."""

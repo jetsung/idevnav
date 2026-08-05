@@ -1,6 +1,8 @@
 .wrangler/
 .sync.*
 .hugo_build.lock
+__pycache__/
+*.py[cod]
 
 /public
 /docs

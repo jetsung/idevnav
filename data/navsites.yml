@@ -655,7 +655,7 @@
       logo: mcpso.png
       favicon:
       url: https://mcp.so/
-      description: MCP 服务器和客户端综合平台
+      description: MCP 目录和客户端综合平台
     - title: Smithery
       logo: smithery.png
       favicon:
@@ -670,12 +670,12 @@
       logo: cline.png
       favicon:
       url: https://cline.bot/mcp-marketplace
-      description: MCP 服务器和客户端综合平台
+      description: MCP 目录和客户端综合平台
     - title: PulseMCP
       logo: pulsemcp.png
       favicon:
       url: https://www.pulsemcp.com/
-      description: MCP 服务器和客户端综合平台
+      description: MCP 目录综合平台
     - title: MCP Servers
       logo: mcpservers.png
       favicon:
@@ -685,12 +685,12 @@
       logo: cursor_directory.png
       favicon:
       url: https://cursor.directory/mcp
-      description: MCP 服务器和客户端综合平台
+      description: MCP 目录综合平台
     - title: MCP Server Finder
       logo: mcpserverfinder.png
       favicon:
       url: https://www.mcpserverfinder.com/servers
-      description: MCP 服务器和客户端综合平台
+      description: MCP 目录综合平台
     - title: 阿里云百炼 MCP
       logo: bailian.svg
       favicon: https://gw.alicdn.com/imgextra/i4/O1CN01vVn7g32134zNZEeAR_!!6000000006928-55-tps-24-24.svg
@@ -701,6 +701,26 @@
       favicon:
       url: https://github.com/mcp
       description: MCP 官方 GitHub 仓库
+    - title: MCPWorld
+      logo: mcpworld.png
+      favicon:
+      url: https://www.mcpworld.com/
+      description: 百度旗下 MCP 聚合平台
+    - title: 魔搭社区 MCP
+      logo: modelscope.png
+      favicon:
+      url: https://www.modelscope.cn/mcp
+      description: 魔搭社区 MCP 目录
+    - title: Composio
+      logo: composio.png
+      favicon:
+      url: https://composio.dev/toolkits
+      description: Composio MCP 目录
+    - title: Pulse MCP
+      logo: pulsemcp.png
+      favicon:
+      url: https://www.pulsemcp.com/servers
+      description: Pulse MCP 目录
 
 - taxonomy: AI・服务
   icon: bi bi-backpack2-fill
@@ -778,7 +798,7 @@
     - title: 阶跃AI
       logo: stepfun.png
       url: https://www.stepfun.com/chats/new
-      description: 阶跃星辰旗下      
+      description: 阶跃星辰旗下
   - term: Chat(海外)
     links:
     - title: ChatGPT
@@ -1135,4 +1155,3 @@
       favicon: https://pixabay.com/favicon-32x32.png
       url: https://pixabay.com
       description: 免费高分辨率图片
-
