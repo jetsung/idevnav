@@ -861,11 +861,6 @@
       favicon:
       url: https://siliconflow.cn/
       description: SiliconFlow 智算平台
-    - title: AIHubMix
-      logo: aihubmix.png
-      favicon:
-      url: https://aihubmix.com/
-      description: AIHubMix 智算平台
     - title: OpenRouter
       logo: openrouter.png
       favicon:
@@ -876,11 +871,21 @@
       favicon:
       url: https://build.nvidia.com/
       description: Nvidia 智算平台
+    - title: AMD Token Factory
+      logo: amd.png
+      favicon:
+      url: https://developer.amd.com.cn/radeon/tokenfactory
+      description: AMD 智算平台
     - title: AI Ping
       logo: aiping.png
       favicon:
       url: https://aiping.cn/
       description: AI Ping 智算平台
+    - title: AIHubMix
+      logo: aihubmix.png
+      favicon:
+      url: https://aihubmix.com/
+      description: AIHubMix 智算平台
   - term: LOGO生成器
     links:
     - title: 标小智
