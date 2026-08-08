@@ -1,5 +1,5 @@
 .wrangler/
-.sync.*
+.sync.txt*
 .hugo_build.lock
 __pycache__/
 *.py[cod]

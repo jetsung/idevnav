@@ -7,16 +7,19 @@ description: 提取 data/navsites.yml 中的新增书签，继承同栏目已有
 
 把 `data/navsites.yml` 中新增的导航条目同步为 `https://link.asfd.cn` 上的 linkding 书签。
 
-全部逻辑封装在同目录的 [`sync.py`](./sync.py) 中，本文档只说明怎么用和为什么这么设计。
+全部逻辑封装在 [`scripts/sync.py`](./scripts/sync.py) 中，本文档只说明怎么用和为什么这么设计。
 
 ## 用法
 
 ```bash
+# 先进入 skill 目录
+cd .agents/skills/linkding-sync-prepper
+
 # 1. 预览：打印待创建清单，不发任何写请求
-./.agents/skills/linkding-sync-prepper/sync.py
+./scripts/sync.py
 
 # 2. 确认无误后执行
-./.agents/skills/linkding-sync-prepper/sync.py --apply
+./scripts/sync.py --apply
 ```
 
 - **默认 dry-run**，只有加 `--apply` 才会创建书签。
@@ -29,7 +32,7 @@ description: 提取 data/navsites.yml 中的新增书签，继承同栏目已有
 没有 uv 时，用已装好这两个包的解释器跑也可以：
 
 ```bash
-python3 .agents/skills/linkding-sync-prepper/sync.py
+python3 scripts/sync.py
 ```
 
 **前置条件**：环境变量 `LINKDING_API_TOKEN`；外部依赖 `git`。
