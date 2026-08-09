@@ -633,7 +633,7 @@
   - term: Skills
     links:
     - title: SkillHub
-      logo: cloud_tencent.png
+      logo: skillhub.png
       url: https://skillhub.cn/
       description: 专为中国用户优化的 AI Skills 社区（腾讯提供）
     - title: SkillsMarketplace
@@ -655,6 +655,11 @@
       logo: atomgit.png
       url: https://atomcode-plugin.atomgit.com/
       description: AtomCode Skills 平台
+    - title: CocoLoop Skills Hub
+      logo: cocoloop.png
+      favicon:
+      url: https://hub.cocoloop.cn/
+      description: Skills 社区平台
   - term: MCP
     links:
     - title: MCP.so
@@ -1008,6 +1013,13 @@
       favicon:
       url: https://www.infoq.cn/
       description: 一个实践驱动的社区资讯站点
+  - term: 论坛
+    links:
+    - title: CocoLoop
+      logo: cocoloop.png
+      favicon:
+      url: https://www.cocoloop.cn/
+      description: CocoLoop 论坛
 
 - taxonomy: 工作・学习
   # icon: fas fa-file-word fa-lg
