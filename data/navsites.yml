@@ -519,11 +519,11 @@
       favicon:
       url: https://cursor.com/
       description: AI 编程助手
-    - title: Windsurf
-      logo: windsurf.png
+    - title: Devin
+      logo: devin.png
       favicon:
-      url: https://windsurf.com/
-      description: AI 编程助手
+      url: https://devin.ai/
+      description: Cognition 旗下 AI 编程助手
     - title: TraeCN
       logo: trae.png
       favicon:
@@ -544,10 +544,10 @@
       favicon:
       url: https://qoder.com/
       description: 阿里巴巴旗下 AI 编程助手（海外版）
-    - title: 通义灵码
-      logo: lingma.png
+    - title: QoderCN
+      logo: qoder.png
       favicon:
-      url: https://lingma.aliyun.com/
+      url: https://qoder.cn/
       description: 阿里巴巴旗下 AI 编程助手
     - title: CodeBuddy
       logo: codebuddy.png
@@ -618,6 +618,11 @@
       logo: cline.png
       url: https://cline.bot/cline-cli
       description: 在终端中使用 Cline 智能体，支持自动化 CI/CD 流程及多编辑器集成
+    - title:
+      logo:
+      favicon:
+      url: https://forum.idev.top/d/1380
+      description: ⇒更多 AI 编程 CLI 工具
   - term: VSCode 扩展
     links:
     - title: Copilot
