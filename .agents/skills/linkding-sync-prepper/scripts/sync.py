@@ -131,10 +131,12 @@ def collect(nav, added_urls: set):
                         missing.append((taxonomy, term, title))
                     continue
                 if url in added_urls:
+                    tags = link.get("tags")
                     new_links.append({
                         "title": title,
                         "url": url,
                         "description": link.get("description") or "",
+                        "tags": tags if tags is not None else None,
                     })
                 else:
                     existing_urls.append(url)
@@ -260,9 +262,22 @@ def main():
     # 步骤 2 + 3：解析标签并打印待创建清单
     plan = []
     for taxonomy, term, links, existing in groups:
-        tags, src = inherit_tags(ld, existing)
+        # 条目级 tags 优先，回退到继承
+        inherit_src = None
+        tags = None
+        # 检查该 term 下所有链接是否有带 tags 的，取第一个非 None 的
+        # 更准确：逐条检查，有 tags 的条目用自带的，否则用继承的
+        for item in links:
+            if item["tags"] is not None:
+                tags = item["tags"]
+                inherit_src = None  # 使用条目自带 tags
+                break
+        if tags is None:
+            tags, inherit_src = inherit_tags(ld, existing)
+
         print(f"[{taxonomy} / {term}] tag_names={tags}"
-              + (f"  ← 继承自 {src}" if src else "  ← 无可用参照，留空"))
+              + (f"  ← 继承自 {inherit_src}" if inherit_src else ""
+                 if tags else ""))
         for item in links:
             print(f"    - {item['title']}  {item['url']}")
             plan.append((item, tags))

@@ -480,6 +480,12 @@
       favicon:
       url: https://www.alwaysdata.com/
       description: 无限的数据库、邮箱和网站
+    - title: DigitalPlat 免费域名
+      logo: digitalplat.png
+      favicon:
+      url: https://domain.digitalplat.org/
+      description: 免费域名申请服务
+      tags: ["免费", "域名"]
   - term: 网站部署
     links:
     - title: Vercel
