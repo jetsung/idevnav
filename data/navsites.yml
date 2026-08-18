@@ -651,20 +651,16 @@
       favicon:
       url: https://skills.sh/
       description: AI 技能平台
-    - title: Hermes Agent Skills
-      logo: hermes.png
-      favicon:
-      url: https://hermes-agent.nousresearch.com/docs/skills
-      description: Nous Research 的 Hermes Agent 技能文档
-    - title: AtomCode Skills
-      logo: atomgit.png
-      url: https://atomcode-plugin.atomgit.com/
-      description: AtomCode Skills 平台
     - title: CocoLoop Skills Hub
       logo: cocoloop.png
       favicon:
       url: https://hub.cocoloop.cn/
       description: Skills 社区平台
+    - title:
+      logo:
+      favicon:
+      url: https://forum.idev.top/d/1466
+      description: ⇒更多 Skill
   - term: MCP
     links:
     - title: MCP.so
@@ -682,11 +678,6 @@
       favicon:
       url: https://glama.ai/mcp/servers
       description: (punkpeye/awesome-mcp-servers)
-    - title: Cline MCP Server
-      logo: cline.png
-      favicon:
-      url: https://cline.bot/mcp-marketplace
-      description: MCP 目录和客户端综合平台
     - title: PulseMCP
       logo: pulsemcp.png
       favicon:
@@ -697,46 +688,26 @@
       favicon:
       url: https://mcpservers.org/
       description: (wong2/awesome-mcp-servers)
-    - title: Cursor Directory MCP
-      logo: cursor_directory.png
-      favicon:
-      url: https://cursor.directory/mcp
-      description: MCP 目录综合平台
     - title: MCP Server Finder
       logo: mcpserverfinder.png
       favicon:
       url: https://www.mcpserverfinder.com/servers
       description: MCP 目录综合平台
-    - title: 阿里云百炼 MCP
-      logo: bailian.svg
-      favicon: https://gw.alicdn.com/imgextra/i4/O1CN01vVn7g32134zNZEeAR_!!6000000006928-55-tps-24-24.svg
-      url: https://bailian.console.aliyun.com/?tab=mcp#/mcp-market
-      description: 阿里云百炼 MCP
-    - title: MCP GitHub
-      logo: github.png
-      favicon:
-      url: https://github.com/mcp
-      description: MCP 官方 GitHub 仓库
     - title: MCPWorld
       logo: mcpworld.png
       favicon:
       url: https://www.mcpworld.com/
       description: 百度旗下 MCP 聚合平台
-    - title: 魔搭社区 MCP
-      logo: modelscope.png
-      favicon:
-      url: https://www.modelscope.cn/mcp
-      description: 魔搭社区 MCP 目录
-    - title: Composio
-      logo: composio.png
-      favicon:
-      url: https://composio.dev/toolkits
-      description: Composio MCP 目录
     - title: Pulse MCP
       logo: pulsemcp.png
       favicon:
       url: https://www.pulsemcp.com/servers
       description: Pulse MCP 目录
+    - title:
+      logo:
+      favicon:
+      url: https://forum.idev.top/d/1471
+      description: ⇒更多 MCP
 
 - taxonomy: AI・服务
   icon: bi bi-backpack2-fill
