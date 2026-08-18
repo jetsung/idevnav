@@ -310,11 +310,6 @@
       favicon:
       url: https://it-tools.tech/
       description: IT 工作者工具箱
-    - title: AI Bot
-      logo: ai-bot.png
-      favicon:
-      url: https://ai-bot.cn/
-      description: AI Bot 导航
   - term: 开发者网站
     links:
     - title: patorjk
@@ -890,6 +885,22 @@
       favicon:
       url: https://www.freelogodesign.org/
       description: (高清需付费下载)Create Your Own Logo
+
+- taxonomy: 资讯・AI
+  icon: bi bi-newspaper
+  list:
+  - term: AI 资讯
+    links:
+    - title: AI Bot
+      logo: ai-bot.png
+      favicon:
+      url: https://ai-bot.cn/
+      description: AI Bot 导航
+    - title: MoGe
+      logo: moge.png
+      favicon:
+      url: https://moge.ai/
+      description: 收录全球最新AI工具
 
 - taxonomy: AI・开发
   icon: bi bi-robot
