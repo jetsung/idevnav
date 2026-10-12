@@ -886,7 +886,7 @@
       url: https://www.freelogodesign.org/
       description: (高清需付费下载)Create Your Own Logo
 
-- taxonomy: 资讯・AI
+- taxonomy: AI・资讯
   icon: bi bi-newspaper
   list:
   - term: AI 资讯
@@ -901,6 +901,11 @@
       favicon:
       url: https://moge.ai/
       description: 收录全球最新AI工具
+    - title: AI 优惠雷达
+      logo: aipromonow.png
+      favicon:
+      url: https://www.aipromonow.com/
+      description: AI 优惠与限时折扣活动汇总
 
 - taxonomy: AI・开发
   icon: bi bi-robot
