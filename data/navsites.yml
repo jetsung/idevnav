@@ -508,6 +508,23 @@
       favicon:
       url: https://fermyon.com/
       description: WebAssembly 服务托管平台
+  - term: CDN
+    links:
+    - title: Yewsafe
+      logo: yewsafe.png
+      favicon:
+      url: https://www.yewsafe.com/zh/scdn
+      description: 中国香港免备案高防 CDN 服务
+    - title: 速盾网络
+      logo: sudun.png
+      favicon:
+      url: https://www.sudun.com/scdn/
+      description: 高防 CDN 与 WAF 防火墙服务
+    - title: CDN5
+      logo: cdn5.png
+      favicon:
+      url: https://www.cdn5.com/services/cdn
+      description: 免费高防 CDN 加速服务
 
 - taxonomy: AI・编程
   icon: bi bi-code-slash
