@@ -266,13 +266,6 @@
       favicon:
       url: https://www.mail-tester.com/
       description: 邮箱服务功能检测
-  - term: 云端练习
-    links:
-    - title: Play with Docker
-      logo: play-with-docker.png
-      favicon:
-      url: https://labs.play-with-docker.com/
-      description: Docker 云端学习平台
   - term: 工具箱
     links:
     - title: transform
@@ -310,6 +303,18 @@
       favicon:
       url: https://it-tools.tech/
       description: IT 工作者工具箱
+  - term: 工具站
+    links:
+    - title: Chahu
+      logo: chahu.png
+      favicon:
+      url: https://www.chahu.com/
+      description: 多节点网络检测工具（网站测速、Ping、路由追踪等）
+    - title: ITDOG
+      logo: itdog.png
+      favicon:
+      url: https://www.itdog.cn/
+      description: 在线 Ping、网站测速、路由追踪等网络检测工具
   - term: 开发者网站
     links:
     - title: patorjk
@@ -569,11 +574,6 @@
       favicon:
       url: https://www.codeflicker.ai/
       description: 快手旗下 AI 编程助手
-    - title: CatPaw
-      logo: catpaw.png
-      favicon:
-      url: https://catpaw.meituan.com/
-      description: 美团旗下 AI 编程助手
     - title: Antigravity
       logo: antigravity.png
       url: https://antigravity.google/

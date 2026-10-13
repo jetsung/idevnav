@@ -27,10 +27,17 @@
 外部依赖：git；环境变量 LINKDING_API_TOKEN。
 """
 
+import sys
+
+# 不要在 scripts/ 目录留下 __pycache__（.gitignore 虽会忽略，但会污染工作区）。
+# 必须在任何其它 import 之前设置，否则之后 import 的模块可能写入 .pyc。
+# 注意：脚本作为 __main__ 直接运行时本就不会生成自身 .pyc；
+# 此标志保证本进程内后续所有 import（含将来新增的本地模块）同样不写缓存。
+sys.dont_write_bytecode = True
+
 import argparse
 import os
 import subprocess
-import sys
 from urllib.parse import quote
 
 import requests
