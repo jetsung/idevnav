@@ -630,6 +630,11 @@
       logo: cline.png
       url: https://cline.bot/cline-cli
       description: 在终端中使用 Cline 智能体，支持自动化 CI/CD 流程及多编辑器集成
+    - title: agent-qa
+      logo: vostride.png
+      favicon:
+      url: https://vostride.com
+      description: 自然语言测试，memidex 持久记忆与自我改进
     - title:
       logo:
       favicon:
