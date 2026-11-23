@@ -1,0 +1,27 @@
+[[repos]]
+repo = "https://github.com/jumanjihouse/pre-commit-hook-yamlfmt"
+rev = "0.2.3"
+hooks = [
+  { id = "yamlfmt", name = "YAML Format", args = ["--mapping", "2", "--sequence", "2", "--offset", "0", "--width", "150"] },
+]
+
+[[repos]]
+repo = "https://github.com/shellcheck-py/shellcheck-py"
+rev = "v0.11.0.1"
+hooks = [
+  { id = "shellcheck" },
+]
+
+[[repos]]
+repo = "https://github.com/pre-commit/pre-commit-hooks"
+rev = "v6.0.0"
+hooks = [
+  { id = "check-yaml" },
+]
+
+# 自定义（本地脚本钩子，按需启用）
+# [[repos]]
+# repo = "local"
+# hooks = [
+#   { id = "pre-commit-before", name = "Run all custom script", entry = "scripts/run_all_checks.sh", language = "script", files = '\\.sh$' },
+# ]
