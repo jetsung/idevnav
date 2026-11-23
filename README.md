@@ -1,6 +1,6 @@
 # 爱开发导航
 
-基于 [**Hugo**](https://gohugo.io/) & [**NavSide 主题**](https://github.com/idevsig/navside)。   
+基于 [**Hugo**](https://gohugo.io/) & [**hugo-side 主题**](https://github.com/jetsung/hugo-side)。   
 
 ---
 
